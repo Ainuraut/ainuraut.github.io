@@ -1,0 +1,165 @@
+nav {background-color:  lightsteelblue; margin-bottom: 0px; font-size: 20px; }
+nav.hover {color: red}
+body {
+ font-family: Verdana,Arial,sans-serif;
+ font-size: 83%;
+}
+.banner {color: slateblue; 
+    background-color: lightsteelblue;
+    text-align: center;
+    font-size: 100px;
+    font-family: Impact;
+    background-image: url("logo.png");
+}
+
+body {background-color: aliceblue;
+}
+.img { display: block;
+  width: 20%;
+  margin-left: auto;
+  margin-right: auto;
+} 
+.img2 { display: block;
+  width: 60px;
+  height: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  margin-bottom: 20px;
+}
+.img3 { display: block;
+  width: 180px;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+#main-heading {border-style: solid;
+ color: darkorchid;
+ text-align: center;
+ font-family: Impact;
+font-size: 30px;}
+
+h2 {
+ color: darkorchid;
+ margin-bottom: 0px;
+ font-size: 170%;
+}
+ul.nav {
+  padding-left: 0px;
+  background-color: linen;
+  text-align: center;
+}
+ul.nav > li {
+  display: inline-block;
+  padding: 50px 20px;
+}
+ul.nav > li:hover { color: red;
+  background-color:lightsteelblue;
+}
+ul.nav > li > a {
+  color: slateblue;
+  text-decoration: none;
+}
+p {
+ margin-top: 2px;
+}
+a.Links:hover {
+ color: red;
+}
+a.vislink:visited {color: darkorchid;}
+#Menu {
+ border-width: 2px;
+ border-style: solid;
+ color: navy;
+ display: inline-flex; 
+ justify-content: space-between;
+}
+.RightPanel {
+ position: absolute;
+ left: 610px;
+ width: 100px;
+ margin-top: 73%;
+ margin-left: 15%;
+ font-weight: bold;
+ font-size: 15px;
+}
+.FloatingBox {
+ float: left;
+ width: 30%;
+ background-color: linen;
+ border-width: 5px;
+ border-style: outset;
+ border-color: slateblue;
+ padding: 10px;
+ margin: 8px;
+}
+.FloatingBox2 {
+ float: left;
+ width: 60%;
+ background-color: linen;
+ border-width: 5px;
+ border-style: outset;
+ border-color: mediumpurple;
+ padding: 10px;
+ margin: 8px;
+}
+.FloatingBox3 {
+ position: absolute;
+ top: 124%;
+ left: 8px;
+ width: 30%;
+ height: 120px;
+ background-color: linen;
+ border-width: 5px;
+ border-style: outset;
+ border-color: indigo;
+ padding: 10px;
+ margin: 8px;
+ padding-top: 1pxs;
+}
+.InfoPanel {
+ position: absolute;
+ top: 108%;
+ left: -13px;
+ width: 95%;
+ height: 347px;
+ background-color: linen;
+ border-width: 5px;
+ border-style: outset;
+ border-color: lightcoral;
+ padding: 10px;
+ margin: 8px;
+ padding-top: 1pxs;
+}
+.GragingPanel {
+    float: right;
+ width: 62.5%;
+ background-color: linen;
+ border-width: 5px;
+ border-style: outset;
+ border-color: mediumpurple;
+ padding: 10px;
+ margin: 8px;
+ left: 0px;
+}
+.Imp {
+    float: left;
+ width: 60%;
+ background-color: mistyrose;
+ padding: 10px;
+ margin: 8px;
+ border-width: 5px;
+ border-style: dotted;
+ border-color: mediumpurple;
+}
+.categories {
+    float: right;
+   color: crimson;
+}
+.quick_links {float: right;
+color: crimson;
+}
+
