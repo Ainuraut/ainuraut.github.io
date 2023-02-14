@@ -152,6 +152,18 @@ a.vislink:visited {color: darkorchid;}
     width: 100%;  
   }
 }
+@media screen and (min-width: 1000px) {
+  #task, #requirements, #submission, #grading {
+    width: 100%; 
+  }
+  img {
+    display: block;
+    max-width: 20%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 
 footer {
