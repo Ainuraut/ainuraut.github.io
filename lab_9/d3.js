@@ -1,5 +1,65 @@
 
-const script = document.createElement('script');
+const svgWidth = 500;
+const svgHeight = 500;
+
+const data = Array.from({ length: 100 }, () => ({
+  x: Math.random() * svgWidth,
+  y: Math.random() * svgHeight,
+}));
+
+const svg = d3.select("svg")
+  .attr("width", svgWidth)
+  .attr("height", svgHeight);
+
+svg.selectAll("circle")
+  .data(data)
+  .enter()
+  .append("circle")
+  .attr("cx", (d) => d.x)
+  .attr("cy", (d) => d.y)
+  .attr("r", 5)
+  .attr("fill", "steelblue");
+
+  d3.csv("titanic.csv").then((data) => {
+  console.log(data);
+});
+
+const ageData = d3.group(data, (d) => d.Age);
+
+const pie = d3.pie().value((d) => d[1].length);
+
+const arc = d3.arc().innerRadius(0).outerRadius(150);
+
+const colors = d3.schemeCategory10;
+
+const svg = d3.select("svg").attr("width", 500).attr("height", 500);
+
+const g = svg.append("g").attr("transform", "translate(250,250)");
+
+const slices = g.selectAll("path")
+  .data(pie(ageData))
+  .enter()
+  .append("path")
+  .attr("d", arc)
+  .attr("fill", (d, i) => colors[i % colors.length]);
+
+g.selectAll("text")
+  .data(pie(ageData))
+  .enter()
+  .append("text")
+  .text((d) => d.data[0])
+  .attr("transform", (d) => `translate(${arc.centroid(d)})`)
+  .attr("text-anchor", "middle")
+  .attr("font-size", "12px");
+
+
+
+
+
+
+
+
+/*const script = document.createElement('script');
 script.src = 'https://d3js.org/d3.v6.min.js';
 document.head.appendChild(script);
 
@@ -71,17 +131,4 @@ const svgHeight = 500;
 const data = Array.from({ length: 100 }, () => ({
   x: Math.random() * svgWidth,
   y: Math.random() * svgHeight,
-}));
-
-const svg = d3.select("svg")
-  .attr("width", svgWidth)
-  .attr("height", svgHeight);
-
-svg.selectAll("circle")
-  .data(data)
-  .enter()
-  .append("circle")
-  .attr("cx", (d) => d.x)
-  .attr("cy", (d) => d.y)
-  .attr("r", 5)
-  .attr("fill", "steelblue");
+}));*/
