@@ -64,3 +64,24 @@ d3.csv('titanic.csv').then(data => {
     .attr('y', 15)
     .text(d => d);
 });
+
+const svgWidth = 500;
+const svgHeight = 500;
+
+const data = Array.from({ length: 100 }, () => ({
+  x: Math.random() * svgWidth,
+  y: Math.random() * svgHeight,
+}));
+
+const svg = d3.select("svg")
+  .attr("width", svgWidth)
+  .attr("height", svgHeight);
+
+svg.selectAll("circle")
+  .data(data)
+  .enter()
+  .append("circle")
+  .attr("cx", (d) => d.x)
+  .attr("cy", (d) => d.y)
+  .attr("r", 5)
+  .attr("fill", "steelblue");
