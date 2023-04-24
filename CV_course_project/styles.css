@@ -15,8 +15,9 @@
   --gray: #ababab;
   --light-gray: #808080;
   --cement:#656164;
-  --light-bg: #333333;
+  --grafit: #333333;
   --green: #3b6366;
+  --pink: #990570;
   --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
 
@@ -36,7 +37,7 @@ html::-webkit-scrollbar-track {
 }
 
 html::-webkit-scrollbar-thumb {
-  background: var(--light-bg);
+  background: var(--grafit);
 }
 
 body {
@@ -124,7 +125,7 @@ section {
 }
 
 .header.active .navbar a:hover {
-  color: var(--green);
+  color: var(--pink);
 }
 
 .header.active .menu {
@@ -146,7 +147,7 @@ section {
 
 
 .cv .pov .box {
-  background-color: var(--light-bg);
+  background-color: var(--grafit);
   padding: 2.5rem;
   margin: 2rem 0;
   box-shadow: var(--box-shadow);
@@ -260,7 +261,7 @@ section {
 
 .contact .mycv .pov input,
 .contact .mycv .pov textarea {
-  background-color: var(--light-bg);
+  background-color: var(--grafit);
   width: 100%;
   padding: 1rem 2rem;
   border-radius: 0.5rem;
@@ -272,7 +273,7 @@ section {
 
 .contact .mycv .pov p {
   font-size: 1.7rem;
-  color: var(--green);
+  color: var(--grafit);
   text-transform: uppercase;
   letter-spacing: 0.1rem;
 }
@@ -284,14 +285,14 @@ section {
 }
 
 .footer {
-  border-top: 0.2rem solid var(--light-bg);
+  border-top: 0.2rem solid var(--grafit);
   text-align: center;
 }
 
 .footer .socialmedia ion-icon {
   font-size: 2.5rem;
   color: var(--green);
-  background-color: var(--light-bg);
+  background-color: var(--grafit);
   border-radius: 50%;
   padding: 1rem;
   margin: 0 1rem;
@@ -300,7 +301,7 @@ section {
 
 .footer p {
   font-size: 1.7rem;
-  color: var(--dark-gray);
+  color: var(--gray);
   margin-top: 3rem;
 }
 
